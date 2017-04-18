@@ -1,0 +1,237 @@
+@import "basic";
+
+#logo{
+	float: left;
+}
+
+#nav{
+	float: right;
+}
+
+#nav li{
+	float: left;
+}
+
+#nav a {
+	padding: 12px;
+	color: #333;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-style: 13px;
+	line-height: 100px;
+}
+
+#nav .active a{
+	color: $branding-color;
+}
+
+.boundary:before{
+	content: "|";
+	margin: 12px;
+}
+
+/*slider*/
+
+.slider img{
+	width: 100%;
+	height: auto;
+}
+
+.category{
+	position: relative;
+}
+
+.category .title{
+	position: absolute;
+	top: 35%;
+	right: 10%;
+	font-size: 24px;
+	font-weight: 300;
+	text-align: right;
+	text-transform: uppercase;
+	color: #222;
+}
+
+.category .title.light {
+	color: #fff;
+}
+
+/*recent products*/
+
+
+
+.title{
+	margin: 0px;
+}
+
+.title > a {
+	text-decoration: none;
+	color: #333;
+	font-weight: normal;
+	
+}
+
+.info{
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 5px;
+}
+
+.info > .price{
+	color: #7e7e7e;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+.product > .thumbnail{
+	position: relative;
+}
+
+.cover {
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.9);
+	border: solid 20px rgba(0, 0, 0, .1);
+	text-align: center;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+.product .cover i{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2rem;
+	color: #7e7e7e;
+}
+
+.cover:hover{
+	opacity: 1;
+}
+
+/* discount*/
+.discount{
+	background-image: url("http://lorempixel.com/1920/1080");
+	background-attachment: fixed;
+	padding: 150px 0;
+}
+
+.discount .title, .discount .subtitle{
+	font-weight: 100;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 0px;
+	line-height: 1.5;
+}
+
+.discount .title{
+	font-size: 70px;
+}
+
+.subtitle{
+	font-size: 24px;
+}
+
+
+/* feature*/
+.feature{
+	margin-bottom: 100px;
+}
+
+.feature > .detail{
+	text-align: center;
+	font-weight: normal;
+}
+
+.feature > .col-6{
+	padding: 30px;
+}
+.feature h4, .feature .price{
+	color: $branding-color;
+}
+
+.feature .price{
+	font-size: 26px;
+}
+
+.feature p{
+	margin: 30px;
+}
+
+/* outlets*/
+.outlets .outlet{
+	font-weight: normal;
+	text-align: left;
+}
+
+.outlets{
+	margin-bottom: 100px;
+}
+
+.outlet > h3{
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+.outlet > .info{
+	text-align: left;
+	font-size: 12px;
+	line-height: 30px;
+	color: #7e7e7e;
+}
+
+.info a{
+	color: #7e7e7e;
+}
+
+.info > .map > a{
+	color: $branding-color;
+}
+
+/* footer*/
+#footer{
+	background-color: #f5f5f5;
+	position: relative;
+	padding: 80px 0;
+}
+
+#f-logo{
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: solid #f5f5f5 5px;
+	padding: 20px;
+	background-color: #fff;
+}
+
+#footer .copyright{
+	float: left;
+	text-transform: uppercase;
+}
+
+#footer .social{
+	float: right;
+}
+
+
+/* go to top*/
+#gototop{
+	position: fixed;
+	right: 25px;
+	bottom: 35px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: rgba(0, 0, 0, .6);
+	color: #fff;
+}
+
+

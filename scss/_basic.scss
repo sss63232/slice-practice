@@ -1,0 +1,198 @@
+$branding-color: #d6b161;
+$text-grey:#7e7e7e;
+$bottom-color: #6f7273;
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 15px;
+	font-weight: 400px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0px;
+	line-height: 1.5;
+}
+
+img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+li{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	color: #7e7e7e;
+	font-size: 15px;
+	line-height: 2;
+}
+
+.button{
+	padding: 15px 30px;
+	background-color: #fff;
+	color: #222;
+	text-transform: uppercase;
+	font-size: 14px;
+	display: inline-block;
+	margin-top: 30px;
+	transition: all 0.2s;
+}
+
+.button.border{
+	border: solid #000 1px;
+}
+
+.button:hover{
+	background-color: #222;
+	color: #fff;
+}
+
+.container{
+	width: 1170px;
+	margin:0px auto;
+}
+
+.container.fullwidth{
+	width: 100%;
+}
+
+.clearfix, .row{
+	&:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.row{
+	width: 100%;
+}
+
+.col-6, .col-4, .col-3, .col-2{
+	float: left;
+	padding: 10px;
+}
+
+.col-6{
+	width: 50%;
+}
+
+.col-4{
+	width: 33.3333%;
+}
+
+.col-12{
+	width: 100%;
+}
+
+.col-3{
+	width: 25%;
+}
+
+.col-2{
+	width: 16.66666%;
+}
+
+#logo{
+	border: solid 25px #fff;
+}
+
+#content > div{
+	margin-top: 100px;
+
+	&.bg-grey{
+		background-color: rgb(245, 245, 245);
+	}
+}
+
+#content > div:first-child{
+	margin-top: 0px;
+}
+
+#content > hr{
+	border: solid #eee 1px;
+	margin: 0px;
+}
+
+.intro{
+	text-align: center;
+	margin-bottom: 100px;
+
+	h2{
+	letter-spacing: 2px;
+    font-weight: normal;
+	text-transform: uppercase;
+	color: #333;
+	}
+
+	hr{
+	border: none;
+	height: 2px;
+	background-color: #888;
+	width: 70px;
+	margin: 0px auto;
+	}
+
+	p{
+	color: #7e7e7e;
+	letter-spacing: 1px;
+	font-weight: 100;
+	}
+
+	&.upper{
+		p{
+			margin: 0;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.social{ 
+	li{
+		display: inline-block;
+
+		a{
+			display: inline-block;
+			margin: 5px;
+			line-height: 40px;
+			color: #7e7e7e;
+			text-align: center;
+			transition: all 0.2s;			
+
+			&:hover{
+				background-color: #000;
+				color: #fff;
+			}
+		}
+	}
+
+	&.border{
+		a{
+			border: solid 1px #7e7e7e;
+			border-radius: 50%;
+			height: 40px;
+			width: 40px;
+		}
+
+	}
+
+}
+
